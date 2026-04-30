@@ -828,7 +828,7 @@
                     children: [
                       (0, R.jsxs)("span", {
                         className: "text-4xl text-[#3ed44f]",
-                        children: "$SCRIBBLELON",
+                        children: "$SCRIBBELON",
                       }),
                     ],
                   }),
