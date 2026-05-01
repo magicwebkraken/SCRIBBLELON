@@ -766,7 +766,7 @@
                             "w-fit p-2 bg-gray-800/50 text-white rounded-lg border border-gray-600",
                           onClick: function () {
                             navigator.clipboard.writeText(
-                              "abcde"
+                              "9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump"
                             ),
                               (0, d.h)({
                                 type: "success",
@@ -774,7 +774,7 @@
                               });
                           },
                           children:
-                            "CA: abcde",
+                            "CA: 9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
                         }),
                       }),
                       (0, R.jsxs)("div", {
@@ -800,7 +800,7 @@
                             
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://dexscreener.com/solana/abcde",
+                            href: "https://dexscreener.com/solana/9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
@@ -813,7 +813,7 @@
                             }),
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://www.dextools.io/app/solana/pair-explorer/abcde",
+                            href: "https://www.dextools.io/app/solana/pair-explorer/9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:

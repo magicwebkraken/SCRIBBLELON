@@ -21239,7 +21239,7 @@
                         }),
                         (0, We.jsx)("a", {
                           className: "text-white",
-                          href: "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=abcde",
+                          href: "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
                           target: "_blank",
                           children: "Buy Now",
                         }),
