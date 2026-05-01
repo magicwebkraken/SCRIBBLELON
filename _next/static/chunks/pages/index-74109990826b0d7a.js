@@ -782,7 +782,7 @@
                         children: [
                         
                           (0, R.jsx)("a", {
-                            href: "https://x.com/OnSingEth_coin",
+                            href: "https://x.com/Scribbelon",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:

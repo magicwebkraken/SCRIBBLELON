@@ -21239,7 +21239,7 @@
                         }),
                         (0, We.jsx)("a", {
                           className: "text-white",
-                          href: "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=abcde",
+                          href: "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=abcde",
                           target: "_blank",
                           children: "Buy Now",
                         }),
