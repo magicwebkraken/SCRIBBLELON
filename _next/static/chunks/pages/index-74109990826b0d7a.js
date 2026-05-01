@@ -143,7 +143,7 @@
         return r;
       }
       function b() {
-        var e = "9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipumpfghijklmnopqrstuvwxyz";
+        var e = "abcdefghijklmnopqrstuvwxyz";
         return e.charAt(Math.floor(Math.random() * e.length));
       }
       function j(e) {
@@ -766,7 +766,7 @@
                             "w-fit p-2 bg-gray-800/50 text-white rounded-lg border border-gray-600",
                           onClick: function () {
                             navigator.clipboard.writeText(
-                              "9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump"
+                              "abcde"
                             ),
                               (0, d.h)({
                                 type: "success",
@@ -774,7 +774,7 @@
                               });
                           },
                           children:
-                            "CA: 9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
+                            "CA: abcde",
                         }),
                       }),
                       (0, R.jsxs)("div", {
@@ -800,7 +800,7 @@
                             
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://dexscreener.com/solana/9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
+                            href: "https://dexscreener.com/solana/abcde",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
@@ -813,7 +813,7 @@
                             }),
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://www.dextools.io/app/solana/pair-explorer/9EZ8N5ukVzSQJGu2K38f1ZydTK6JrqCx57j8yTipump",
+                            href: "https://www.dextools.io/app/solana/pair-explorer/abcde",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
