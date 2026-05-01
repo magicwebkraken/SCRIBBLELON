@@ -398,9 +398,432 @@
           U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
+    <style id="site-gallery-styles">
+      .site-gallery-section {
+        width: 100%;
+        background: #1b1b1b;
+        padding: 3rem 1.25rem 4rem;
+        border-top: 2px solid #3ed44f;
+      }
+      .site-gallery-section h2 {
+        font-family: Wallpoet, system-ui, sans-serif;
+        color: #3ed44f;
+        text-align: center;
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+        letter-spacing: 0.08em;
+        margin: 0 0 0.5rem;
+        text-transform: uppercase;
+      }
+      .site-gallery-section p {
+        font-family: Caveat, "Dancing Script", cursive;
+        color: #b8e8bf;
+        text-align: center;
+        font-size: 1.35rem;
+        margin: 0 0 2rem;
+        max-width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .site-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+        max-width: 1100px;
+        margin: 0 auto;
+        list-style: none;
+        padding: 0;
+      }
+      .site-gallery-grid li {
+        margin: 0;
+      }
+      .site-gallery-grid button {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: 2px solid #3ed44f;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        background: #111;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .site-gallery-grid button:hover,
+      .site-gallery-grid button:focus-visible {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 3px rgba(62, 212, 79, 0.35);
+        outline: none;
+      }
+      .site-gallery-grid img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+      .site-gallery-caption {
+        font-family: system-ui, sans-serif;
+        font-size: 0.8rem;
+        color: #3ed44f;
+        padding: 0.5rem 0.65rem;
+        text-align: center;
+        background: #141414;
+      }
+      .site-gallery-item-desc {
+        font-family: Caveat, "Dancing Script", cursive;
+        font-size: clamp(0.95rem, 2.4vw, 1.15rem);
+        color: #b8e8bf;
+        text-align: center;
+        margin: 0.65rem 0 0;
+        line-height: 1.4;
+        padding: 0 0.35rem;
+        max-width: 36rem;
+      }
+      #site-gallery-dialog {
+        border: 2px solid #3ed44f;
+        border-radius: 12px;
+        background: #0d0d0d;
+        padding: 0.75rem;
+        max-width: min(96vw, 920px);
+      }
+      #site-gallery-dialog::backdrop {
+        background: rgba(0, 0, 0, 0.88);
+      }
+      #site-gallery-dialog img {
+        max-width: 100%;
+        max-height: 82vh;
+        width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+      #site-gallery-close {
+        margin-top: 0.75rem;
+        width: 100%;
+        padding: 0.55rem 1rem;
+        font-size: 1rem;
+        background: #1b1b1b;
+        color: #3ed44f;
+        border: 2px solid #3ed44f;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      #site-gallery-close:hover,
+      #site-gallery-close:focus-visible {
+        background: #243524;
+        outline: none;
+      }
+      .site-dex-chart-section {
+        width: 100%;
+        background: #1b1b1b;
+        padding: 2.5rem 1rem 3rem;
+        border-top: 2px solid #3ed44f;
+      }
+      .site-dex-chart-section h2 {
+        font-family: Wallpoet, system-ui, sans-serif;
+        color: #3ed44f;
+        text-align: center;
+        font-size: clamp(1.35rem, 3.5vw, 2rem);
+        letter-spacing: 0.06em;
+        margin: 0 0 0.35rem;
+        text-transform: uppercase;
+      }
+      .site-dex-chart-note {
+        font-family: Caveat, "Dancing Script", cursive;
+        color: #b8e8bf;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0 0 1.25rem;
+      }
+      .site-dex-chart-frame-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        border: 2px solid #3ed44f;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #0d0d0d;
+        line-height: 0;
+      }
+      .site-dex-chart-frame-wrap iframe {
+        display: block;
+        width: 100%;
+        height: min(560px, 72vh);
+        min-height: 400px;
+        border: 0;
+      }
+      .site-dex-chart-open {
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        margin: 1rem 0 0;
+        font-size: 0.95rem;
+      }
+      .site-dex-chart-open a {
+        color: #3ed44f;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .site-dex-chart-open a:hover {
+        color: #b8e8bf;
+      }
+    </style>
+    <p class="site-gallery-item-desc">
+      Elon, wind-swept and wide-eyed, standing at the helm of a celestial
+      Starship that looks like it flew straight out of Spirited Away
+    </p>
   </head>
   <body class="font-Monrope">
     <div id="__next"></div>
+    <section
+      id="gallery"
+      class="site-gallery-section"
+      aria-labelledby="gallery-heading"
+    >
+      <h2 id="gallery-heading">Gallery</h2>
+      <p>Tap an image to view it larger.</p>
+      <ul class="site-gallery-grid">
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="Elon, wind-swept and wide-eyed, standing at the helm of a celestial Starship that looks like it flew straight out of Spirited Away"
+            aria-label="Open first artwork full size"
+          >
+            <img
+              src="/1.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+          </button>
+          
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="SCRIBBELON front artwork"
+            aria-label="Open front artwork full size"
+          >
+            <img
+              src="/2.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="SCRIBBELON front artwork"
+            aria-label="Open front artwork full size"
+          >
+            <img
+              src="/3.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="SCRIBBELON front artwork"
+            aria-label="Open front artwork full size"
+          >
+            <img
+              src="/4.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+     
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="SCRIBBELON front artwork"
+            aria-label="Open front artwork full size"
+          >
+            <img
+              src="/5.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+    
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/front.png"
+            data-gallery-alt="SCRIBBELON front artwork"
+            aria-label="Open front artwork full size"
+          >
+            <img
+              src="/6.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+   
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/logo.png"
+            data-gallery-alt="SCRIBBELON logo"
+            aria-label="Open logo full size"
+          >
+            <img
+              src="/7.png"
+              alt=""
+              width="400"
+              height="220"
+              loading="lazy"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            data-gallery-src="/aaa.png"
+            data-gallery-alt="SCRIBBELON artwork"
+            aria-label="Open artwork full size"
+          >
+            <img src="/aaa.png" alt="" width="400" height="220" loading="lazy" />
+       
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section
+      id="dex-chart"
+      class="site-dex-chart-section"
+      aria-labelledby="dex-chart-heading"
+    >
+      <h2 id="dex-chart-heading">Live chart</h2>
+      <p class="site-dex-chart-note">Real-time data via DEX Screener</p>
+      <div class="site-dex-chart-frame-wrap">
+        <iframe
+          src="https://dexscreener.com/solana/abcde?embed=1"
+          title="DEX Screener — SCRIBBELON pair chart"
+          allow="clipboard-write; fullscreen"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p class="site-dex-chart-open">
+        <a
+          href="https://dexscreener.com/solana/abcde"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open full pair page on DEX Screener</a
+        >
+      </p>
+    </section>
+    <dialog id="site-gallery-dialog" aria-label="Image preview">
+      <img id="site-gallery-dialog-img" src="" alt="" />
+      <button type="button" id="site-gallery-close">Close</button>
+    </dialog>
+    <script>
+      (function () {
+        function placeGalleryAfterTokenomics() {
+          var gallery = document.getElementById("gallery");
+          var box = document.querySelector(".contentbox");
+          if (!gallery || !box) return false;
+          var wrapper = null;
+          var i,
+            ch,
+            len = box.children.length;
+          for (i = 0; i < len; i++) {
+            ch = box.children[i];
+            if (
+              ch.querySelector &&
+              ch.querySelector(".grid.grid-cols-2")
+            ) {
+              wrapper = ch;
+              break;
+            }
+          }
+          if (!wrapper) {
+            for (i = 0; i < len; i++) {
+              ch = box.children[i];
+              if (ch.querySelector && ch.querySelector(".grid")) {
+                wrapper = ch;
+                break;
+              }
+            }
+          }
+          if (!wrapper) return false;
+          wrapper.insertAdjacentElement("afterend", gallery);
+          placeDexChartAfterGallery();
+          return true;
+        }
+
+        function placeDexChartAfterGallery() {
+          var chart = document.getElementById("dex-chart");
+          var gallery = document.getElementById("gallery");
+          if (!chart || !gallery) return false;
+          gallery.insertAdjacentElement("afterend", chart);
+          return true;
+        }
+
+        function startPlacementRetries() {
+          if (placeGalleryAfterTokenomics()) return;
+          var attempts = 0;
+          var t = setInterval(function () {
+            attempts++;
+            if (placeGalleryAfterTokenomics() || attempts > 80) {
+              clearInterval(t);
+            }
+          }, 50);
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener(
+            "DOMContentLoaded",
+            startPlacementRetries
+          );
+        } else {
+          startPlacementRetries();
+        }
+
+        var dialog = document.getElementById("site-gallery-dialog");
+        var full = document.getElementById("site-gallery-dialog-img");
+        var closeBtn = document.getElementById("site-gallery-close");
+        if (!dialog || !full || !closeBtn) return;
+        document.querySelectorAll("[data-gallery-src]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            full.src = btn.getAttribute("data-gallery-src") || "";
+            full.alt = btn.getAttribute("data-gallery-alt") || "";
+            if (dialog.showModal) dialog.showModal();
+          });
+        });
+        closeBtn.addEventListener("click", function () {
+          dialog.close();
+        });
+        dialog.addEventListener("click", function (e) {
+          if (e.target === dialog) dialog.close();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && dialog.open) dialog.close();
+        });
+      })();
+    </script>
     <script
       async
       src="https://platform.twitter.com/widgets.js"

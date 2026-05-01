@@ -746,6 +746,19 @@
                         style: { marginBottom: 40 },
                         src: "/aaa.png",
                       }),
+                      (0, R.jsx)("p", {
+                        style: {
+                          maxWidth: "36rem",
+                          margin: "0 auto 1rem",
+                          padding: "0 1rem",
+                          textAlign: "center",
+                          fontSize: "clamp(1rem, 2.8vw, 1.125rem)",
+                          color: "#d1d5db",
+                          lineHeight: 1.65,
+                        },
+                        children:
+                          "Elon, wind-swept and wide-eyed, standing at the helm of a celestial Starship that looks like it flew straight out of Spirited Away",
+                      }),
                       (0, R.jsx)("div", {
                         className: "flex items-center justify-center mb-4",
                         children: (0, R.jsx)("div", {
