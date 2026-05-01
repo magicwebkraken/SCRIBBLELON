@@ -108,7 +108,7 @@
             fractionGroupSeparator: "\xa0",
             suffix: "",
           },
-          I = "0123456789ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipumpfghijklmnopqrstuvwxyz",
+          I = "0123456789abcdefghijklmnopqrstuvwxyz",
           T = !0;
         function M(e, r) {
           var n,

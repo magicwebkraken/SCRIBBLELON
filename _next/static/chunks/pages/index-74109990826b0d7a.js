@@ -143,7 +143,7 @@
         return r;
       }
       function b() {
-        var e = "ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipumpfghijklmnopqrstuvwxyz";
+        var e = "abcdefghijklmnopqrstuvwxyz";
         return e.charAt(Math.floor(Math.random() * e.length));
       }
       function j(e) {
@@ -766,7 +766,7 @@
                             "w-fit p-2 bg-gray-800/50 text-white rounded-lg border border-gray-600",
                           onClick: function () {
                             navigator.clipboard.writeText(
-                              "ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipump"
+                              "abcde"
                             ),
                               (0, d.h)({
                                 type: "success",
@@ -774,7 +774,7 @@
                               });
                           },
                           children:
-                            "CA: ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipump",
+                            "CA: abcde",
                         }),
                       }),
                       (0, R.jsxs)("div", {
@@ -782,7 +782,7 @@
                         children: [
                         
                           (0, R.jsx)("a", {
-                            href: "https://x.com/Scribbelon",
+                            href: "https://x.com/ScribbelonX",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
@@ -800,7 +800,7 @@
                             
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://dexscreener.com/solana/ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipump",
+                            href: "https://dexscreener.com/solana/abcde",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
@@ -813,7 +813,7 @@
                             }),
                           }),
                           (0, R.jsx)("a", {
-                            href: "https://www.dextools.io/app/solana/pair-explorer/ArGcFCL7QsFPk8GKUxcrUVRWQec5gAujruN6w99ipump",
+                            href: "https://www.dextools.io/app/solana/pair-explorer/abcde",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             className:
